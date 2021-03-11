@@ -1,0 +1,154 @@
+/* Colors and fonts */
+body, html{
+  margin: 0;
+  background: #F7F9FC;
+  color: #575F7D;
+  height: 100%;
+  font-family: 'Lora', sans-serif;
+  font: 20px;
+  font-weight: lighter;
+  height: 100%;
+}
+
+
+.conteudo {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  color: #435560;
+  font-size: 32px;
+  font-weight: 900;
+}
+h2 {
+  color: #1f441e;
+  font-size: 27px;
+  font-weight: lighter;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #055160;
+  font-weight: 600;
+  font-size: 16px;
+}
+a:hover {
+  color: black;
+}
+
+/* Custom design with class (99% of your design) */
+.container {
+  width: 700px;
+  margin: 40px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+/* Parallax
+-------------------------*/
+.box1, .box2 {
+  position: relative;
+  height: 100%;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.box1{
+  background-image: url(images/image1.jpg);
+}
+
+.box2{
+  background-image: url(images/image2.png);
+}
+
+.conteudo-titulo {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+}
+
+.conteudo-titulo span.titulo {
+  color: #fff;
+  background-color: #111;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.card-white {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 20px 40px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.btn-blue {
+  background-color: #055160;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+.btn-blue:hover {
+  background-color:black ;
+  color: white;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 15px;
+}
+.list-inline i {
+  font-size: 70px;
+  color: rgb(230, 230, 230);
+  letter-spacing: 40px;
+}
+.list-inline i:hover {
+  color: black;
+}
+
+/* Design adjustments using id (1% design remaining) */
+#introduction p {
+  margin-bottom: 50px;
+}
